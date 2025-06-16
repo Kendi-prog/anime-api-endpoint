@@ -1,6 +1,12 @@
-const AnimeCard = () => {
+const AnimeCard = ({ anime }) => {
     return (
-        <div></div>
+        <div>
+            <img
+                src={anime.images.jpg.image_url}
+                alt={anime.title} 
+            />
+            <h3>{anime.title}</h3>
+        </div>
     )
 }
 
