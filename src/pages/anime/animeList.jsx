@@ -19,13 +19,15 @@ const AnimeList = () => {
     }, []);
 
     return(
-        <div>
-            <h1>Top Animes</h1>
-            {animeList.map((anime) => 
-                 (
-                    <AnimeCard key={anime.mal_id} anime={anime}/>
-                )
-            )}
+        <div className="p-6 bg-gray-50 min-h-screen">
+            <h1 className="text-3xl font-bold mb-6 text-center text-indigo-600">Top Animes</h1>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                {animeList.map((anime) => 
+                    (
+                        <AnimeCard key={anime.mal_id} anime={anime}/>
+                    )
+                )}
+            </div>
         </div>
     )
 }
