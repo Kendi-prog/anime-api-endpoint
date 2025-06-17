@@ -5,9 +5,10 @@ function App() {
  
 
   return (
-    <>
+    <div>
+
       <AnimeList />
-    </>
+    </div>
   )
 }
 
